@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Survey Form
+        </div>
+        <div class="form">
+            <div class="input_field">
+                <label>Name</label>
+                <input type="text" class="input" >
+            </div>
+            <div class="input_field">
+                <label>Email</label>
+                <input ID="txtEmailId" type="text" class="input" onblur="validateEmail(this);">
+            </div>
+            <div class="input_field">
+                <label>Age</label>
+                <input type="text" class="input" onkeypress="return OnlyNumbers(this, event)">
+            </div>
+            <div class="input_field">
+                <label>Which option best describes</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Student">Student</option>
+                        <option value="Working Professional">Working Professional</option>
+                        <option value="Homemaker">Homemaker</option>
+                        <option value="Retired">Retired</option>
+                        <option value="Not Applicable">Not Applicable</option>
+                    </select>
+                </div>
+            </div>     
+            <div class="input_field">
+                <label>Will you recommend this college to others?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Extremely likely">Extremely likely</option>
+                        <option value="Very likely">Very likely</option>
+                        <option value="Somewhat likely">Somewhat likely</option>
+                        <option value="Not so likely">Not so likely</option>
+                        <option value="Not at all likely">Not at all likely</option>
+                    </select>
+                </div>
+            </div>   
+            <div class="input_field">
+                <label>Are you satisfied with the teaching staff and their teaching methods?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Extremely satisfied">Extremely satisfied</option>
+                        <option value="Very satisfied">Very satisfied</option>
+                        <option value="Satisfied">Satisfied</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Dissatisfied">Dissatisfied</option>
+                        <option value="Very dissatisfied">Very dissatisfied</option>
+                        <option value="Extremely dissatisfied">Extremely dissatisfied</option>
+
+                    </select>
+                </div>
+            </div>  
+            <div class="input_field">
+                <label>How satisfied are you with the facilities provided by the college?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Extremely satisfied">Extremely satisfied</option>
+                        <option value="Very satisfied">Very satisfied</option>
+                        <option value="Satisfied">Satisfied</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Dissatisfied">Dissatisfied</option>
+                        <option value="Very dissatisfied">Very dissatisfied</option>
+                        <option value="Extremely dissatisfied">Extremely dissatisfied</option>
+
+                    </select>
+                </div>
+            </div>   
+            <div class="input_field">
+                <label>Was it easy to obtain the necessary resources from the college library?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        
+                    </select>
+                </div>
+            </div>   
+            <div class="input_field">
+                <label>Is it easy to obtain the necessary resources from the college library?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>Do you feel it is easier to register for different courses within the college?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Extremely satisfied">Extremely satisfied</option>
+                        <option value="Very satisfied">Very satisfied</option>
+                        <option value="Satisfied">Satisfied</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Dissatisfied">Dissatisfied</option>
+                        <option value="Very dissatisfied">Very dissatisfied</option>
+                        <option value="Extremely dissatisfied">Extremely dissatisfied</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>How satisfied are you with the cleanliness and variety of food items available in the cafeteria?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Extremely satisfied">Extremely satisfied</option>
+                        <option value="Very satisfied">Very satisfied</option>
+                        <option value="Satisfied">Satisfied</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Dissatisfied">Dissatisfied</option>
+                        <option value="Very dissatisfied">Very dissatisfied</option>
+                        <option value="Extremely dissatisfied">Extremely dissatisfied</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>How supportive were the faculty members?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Extremely supportive">Extremely supportive</option>
+                        <option value="Very supportive">Very supportive</option>
+                        <option value="Supportive">Supportive</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Unsupportive">Unsupportive</option>
+                        <option value="Very unsupportive">Very unsupportive</option>
+                        <option value="Extremely unsupportive">Extremely unsupportive</option>
+
+                    </select>
+                </div>
+            </div>  
+            <div class="input_field">
+                <label>What do you think of the hostel?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Extremely crowded">Extremely crowded</option>
+                        <option value="Very crowded">Very crowded</option>
+                        <option value="Somewhat crowded">Somewhat crowded</option>
+                        <option value="Not so crowded">Not so crowded</option>
+                        <option value="Not at all crowded">Not at all crowded</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>Are you satisfied with the teaching staff and their teaching practices?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>Do you think faculty and support staff at the college were helpful?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Very helpful">Very helpful</option>
+                        <option value="Helpful">Helpful</option>
+                        <option value="Neither helpful nor unhelpful">Neither helpful nor unhelpful</option>
+                        <option value="Unhelpful">Unhelpful</option>
+                        <option value="Very unhelpful">Very unhelpful</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>How likely are you to continue attending this college next year?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Extremely likely">Extremely likely</option>
+                        <option value="Very likely">Very likely</option>
+                        <option value="Somewhat likely">Somewhat likely</option>
+                        <option value="Not so likely">Not so likely</option>
+                        <option value="Not at all likely">Not at all likely</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>How satisfied are you with the accommodation?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Extremely satisfied">Extremely satisfied</option>
+                        <option value="Very satisfied">Very satisfied</option>
+                        <option value="Satisfied">Satisfied</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Dissatisfied">Dissatisfied</option>
+                        <option value="Very dissatisfied">Very dissatisfied</option>
+                        <option value="Extremely dissatisfied">Extremely dissatisfied</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>Given a chance, are you willing to pursue another course at the college?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Definitely, Yes">Definitely, Yes</option>
+                        <option value="Probably, Yes">Probably, Yes</option>
+                        <option value="Probably, No">Probably, No</option>
+                        <option value="Definitely, No">Definitely, No</option>
+                        <option value="Can’t say">Can’t say</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>Do you think your siblings or friends will be benefited by studying at this college?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Definitely, Yes">Definitely, Yes</option>
+                        <option value="Probably, Yes">Probably, Yes</option>
+                        <option value="Probably, No">Probably, No</option>
+                        <option value="Definitely, No">Definitely, No</option>
+                        <option value="Can’t say">Can’t say</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>How many hours a week do you work your part-time job?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="I don’t have a job">I don’t have a job</option>
+                        <option value="1-10 hours a week">1-10 hours a week</option>
+                        <option value="11-15 hours a week">11-15 hours a week</option>
+                        <option value="16-20 hours a week">16-20 hours a week</option>
+                        <option value="More than 20 hours a week">More than 20 hours a week</option>
+                    </select>
+                </div>
+            </div>                 
+            <div class="input_field">
+                <label>How about your overall experience with this college?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="I don’t have a job">I don’t have a job</option>
+                        <option value="No, I manage them both well">No, I manage them both well</option>
+                        <option value="Yes, but rarely">Yes, but rarely</option>
+                        <option value="Yes, often">Yes, often</option>
+                        <option value="Yes, always">Yes, always</option>
+                    </select>
+                </div>
+            </div>   
+            <div class="input_field">
+                <label>What do you think about extracurricular activities?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="They are too few">They are too few</option>
+                        <option value="They are just right">They are just right</option>
+                        <option value="I was overwhelmed with the number">I was overwhelmed with the number</option>
+
+                    </select>
+                </div>
+            </div>   
+            <div class="input_field">
+                <label>Do you think that the college takes enough measures to curb racial and ethnic bias?</label>
+                <div class="custom_select">
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="Definitely, Yes">Definitely, Yes</option>
+                        <option value="Probably, Yes">Probably, Yes</option>
+                        <option value="Probably, No">Probably, No</option>
+                        <option value="Definitely, No">Definitely, No</option>
+                        <option value="Can’t say">Can’t say</option>
+                    </select>
+                </div>
+            </div>   
+            <div class="input_field">
+                <label>Please provide us with additional feedback on areas that need improvement</label>
+                <textarea name="" id="" cols="30" rows="10" class="textarea"></textarea>
+            </div>
+            <div class="input_field terms">
+                <label class="check">
+                    <input type="checkbox" name="" id="">
+                    <span class="checkmark"></span>
+                </label>
+                <p>Agreed to terms and conditions</p>
+            </div>
+            <div class="input_field">
+                <input type="submit" value="Register" class="btn">
+            </div>               
+        </div>
+    </div>
+    <script>
+        function ValidateNewMobileNo(txtNewMobNo) {
+            var re = /^[2-9]{1}[0-9]{9}$/;
+            if (re.test(txtNewMobNo.value) == false) {
+                alert('Invalid Mobile Number');
+                document.getElementById('<%=this.txtNewMobNo.ClientID%>').value = "";
+                return false;
+            }
+            return true;
+        }
+        function validateEmail(emailField) {
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+            if (reg.test(emailField.value) == false) {
+                alert('Invalid Email Address');
+                document.getElementById('<%=this.txtEmailId.ClientID%>').value = "";
+                return false;
+            }
+
+            return true;
+
+        }
+        function OnlyNumbers(txt, e) {
+            e = (window.event) ? window.event : e;
+            var keyCode = e.keyCode ? e.keyCode : e.charCode;
+            if (keyCode == 46) {
+                if (el.value.indexOf('.') === -1) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                if (keyCode < 48 || keyCode > 57) {
+                    return false;
+                }
+                else
+                    return true;
+            }
+        }
+    </script>
+</body>
+</html>
